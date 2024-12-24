@@ -14,7 +14,7 @@ S3_BUCKET_NAME = 's3-leverage-01'
 # Initialize the S3 client
 s3_client = boto3.client(
     's3',
-    aws_access_key_= ACKEY,
+    aws_access_key_id=ACKEY,
     aws_secret_access_key=SECKEY
 )
 # Route to show the file upload form
@@ -49,4 +49,4 @@ def upload_file():
         return f"An error occurred: {e}"
 
 if __name__ == '__main__':
-    app.run(debug=True)   
+    app.run(host="0.0.0.0", port=5000, debug=True)  

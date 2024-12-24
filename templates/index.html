@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome Engineers!</title>
+  </head>
+  <body>
+    <header> 
+      <h1>Welcome Engineers!</h1>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></a></li>
+          <li><a href="#">About</a></a></li>
+          <li><a href="#">Contact</a></a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <h3>Upload a File to S3</h3>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="file">Choose a file:</label>
+      <input type="file" id="file" name="file" required />
+      <button type="submit">Upload</button>
+    </form>
+    <main>
+      <p>Thank you!</p>
+    </main>
+    <footer>
+      <p>&copy; 2024 Website. </p>
+    </footer>
+
+  </body>
+</html>
